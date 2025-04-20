@@ -15,37 +15,37 @@
       <h2 class="text-2xl font-semibold">Part I: Spirituality</h2>
       <div>
         <p class="mb-2">Do you practice any religion/spirituality?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="sp1" value="very" required class="mr-2">Yes, I am very religious/spiritual</label>
-          <label><input type="radio" name="sp1" value="casual" class="mr-2">Yes, but only casually</label>
-          <label><input type="radio" name="sp1" value="raised_unsure" class="mr-2">Raised religious, but unsure</label>
-          <label><input type="radio" name="sp1" value="not_raised_unsure" class="mr-2">Not raised religious, but unsure</label>
-          <label><input type="radio" name="sp1" value="none" class="mr-2">I do not practice nor believe at all</label>
+        <div class="space-y-4">
+          <label class="block"><input type="radio" name="sp1" value="very" required class="mr-2">Yes, I am very religious/spiritual</label>
+          <label class="block"><input type="radio" name="sp1" value="casual" class="mr-2">Yes, but only casually</label>
+          <label class="block"><input type="radio" name="sp1" value="raised_unsure" class="mr-2">Raised religious, but unsure</label>
+          <label class="block"><input type="radio" name="sp1" value="not_raised_unsure" class="mr-2">Not raised religious, but unsure</label>
+          <label class="block"><input type="radio" name="sp1" value="none" class="mr-2">I do not practice nor believe at all</label>
         </div>
       </div>
       <div>
         <p class="mb-2">Which belief was it? (Select all that apply.)</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <label><input type="checkbox" name="sp2" value="Monotheism" class="mr-2">Monotheism</label>
-          <label><input type="checkbox" name="sp2" value="Polytheism" class="mr-2">Polytheism</label>
-          <label><input type="checkbox" name="sp2" value="Animism" class="mr-2">Animism</label>
-          <label><input type="checkbox" name="sp2" value="HumanSpirits" class="mr-2">Belief all humans have spirits</label>
-          <label><input type="checkbox" name="sp2" value="Afterlife" class="mr-2">Belief in afterlife</label>
-          <label><input type="checkbox" name="sp2" value="Transcendence" class="mr-2">Belief in transcending</label>
-          <label><input type="checkbox" name="sp2" value="Reincarnation" class="mr-2">Reincarnation</label>
-          <label><input type="checkbox" name="sp2" value="Karma" class="mr-2">Karma-like power</label>
-          <label><input type="checkbox" name="sp2" value="Other" class="mr-2">Other</label>
-          <label><input type="checkbox" name="sp2" value="NA" class="mr-2">N/A</label>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <label class="block"><input type="checkbox" name="sp2" value="Monotheism" class="mr-2">Monotheism</label>
+          <label class="block"><input type="checkbox" name="sp2" value="Polytheism" class="mr-2">Polytheism</label>
+          <label class="block"><input type="checkbox" name="sp2" value="Animism" class="mr-2">Animism</label>
+          <label class="block"><input type="checkbox" name="sp2" value="HumanSpirits" class="mr-2">Belief all humans have spirits</label>
+          <label class="block"><input type="checkbox" name="sp2" value="Afterlife" class="mr-2">Belief in afterlife</label>
+          <label class="block"><input type="checkbox" name="sp2" value="Transcendence" class="mr-2">Belief in transcending</label>
+          <label class="block"><input type="checkbox" name="sp2" value="Reincarnation" class="mr-2">Reincarnation</label>
+          <label class="block"><input type="checkbox" name="sp2" value="Karma" class="mr-2">Karma-like power</label>
+          <label class="block"><input type="checkbox" name="sp2" value="Other" class="mr-2">Other</label>
+          <label class="block"><input type="checkbox" name="sp2" value="NA" class="mr-2">N/A</label>
         </div>
       </div>
       <div>
         <p class="mb-2">Do you enjoy philosophical conversation/debates?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="sp3" value="love" required class="mr-2">Yes—my favorite pastime</label>
-          <label><input type="radio" name="sp3" value="small" class="mr-2">I enjoy them in small doses</label>
-          <label><input type="radio" name="sp3" value="action" class="mr-2">Prefer actionable insights</label>
-          <label><input type="radio" name="sp3" value="topic_dep" class="mr-2">Depends on topic (ethics/free will/consciousness)</label>
-          <label><input type="radio" name="sp3" value="not_really" class="mr-2">Not really—waste of time</label>
+        <div class="space-y-4">
+          <label class="block"><input type="radio" name="sp3" value="love" required class="mr-2">Yes—my favorite pastime</label>
+          <label class="block"><input type="radio" name="sp3" value="small" class="mr-2">I enjoy them in small doses</label>
+          <label class="block"><input type="radio" name="sp3" value="action" class="mr-2">Prefer actionable insights</label>
+          <label class="block"><input type="radio" name="sp3" value="topic_dep" class="mr-2">Depends on topic (ethics/free will/consciousness)</label>
+          <label class="block"><input type="radio" name="sp3" value="not_really" class="mr-2">Not really—waste of time</label>
         </div>
       </div>
       <button id="toA" type="button" class="w-full py-3 bg-indigo-600 text-white rounded-xl">Continue to Quiz</button>
@@ -57,250 +57,32 @@
       <!-- Q1 -->
       <div>
         <p class="mb-2">1. Which of these statements are you 100% sure is true? (Select up to 3)</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <label><input type="checkbox" name="a1" value="D" class="mr-2">Mind is nonphysical</label>
-          <label><input type="checkbox" name="a1" value="P" class="mr-2">Body is physical</label>
-          <label><input type="checkbox" name="a1" value="D" class="mr-2">Mind and body interact</label>
-          <label><input type="checkbox" name="a1" value="D" class="mr-2">Physical and nonphysical cannot interact</label>
-          <label><input type="checkbox" name="a1" value="N" class="mr-2">Unsure about all</label>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <label class="block"><input type="checkbox" name="a1" value="D" class="mr-2">Mind is nonphysical</label>
+          <label class="block"><input type="checkbox" name="a1" value="P" class="mr-2">Body is physical</label>
+          <label class="block"><input type="checkbox" name="a1" value="D" class="mr-2">Mind and body interact</label>
+          <label class="block"><input type="checkbox" name="a1" value="D" class="mr-2">Physical and nonphysical cannot interact</label>
+          <label class="block"><input type="checkbox" name="a1" value="N" class="mr-2">Unsure about all</label>
         </div>
         <p id="a1Error" class="text-red-600 text-sm mt-1 hidden">Select 1–3 options.</p>
       </div>
       <!-- Q2 -->
       <div>
         <p class="mb-2">2. Which of these statements are you 100% sure is false? (Select all that apply)</p>
-        <div class="space-y-2">
-          <label><input type="checkbox" name="a2" value="P" class="mr-2">Mind is nonphysical</label>
-          <label><input type="checkbox" name="a2" value="P" class="mr-2">Body is physical</label>
-          <label><input type="checkbox" name="a2" value="D" class="mr-2">Mind and body interact</label>
-          <label><input type="checkbox" name="a2" value="D" class="mr-2">Physical and nonphysical cannot interact</label>
-          <label><input type="checkbox" name="a2" value="N" class="mr-2">Unsure about all</label>
+        <div class="space-y-4">
+          <label class="block"><input type="checkbox" name="a2" value="P" class="mr-2">Mind is nonphysical</label>
+          <label class="block"><input type="checkbox" name="a2" value="P" class="mr-2">Body is physical</label>
+          <label class="block"><input type="checkbox" name="a2" value="D" class="mr-2">Mind and body interact</label>
+          <label class="block"><input type="checkbox" name="a2" value="D" class="mr-2">Physical and nonphysical cannot interact</label>
+          <label class="block"><input type="checkbox" name="a2" value="N" class="mr-2">Unsure about all</label>
         </div>
       </div>
       <!-- Q3 -->
       <div>
         <p class="mb-2">3. Are the mind and body separate?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="a3" value="D" required class="mr-2">Separate &amp; interact</label>
-          <label><input type="radio" name="a3" value="D" class="mr-2">Separate &amp; no interaction</label>
-          <label><input type="radio" name="a3" value="D" class="mr-2">Not separate but dual properties</label>
-          <label><input type="radio" name="a3" value="P" class="mr-2">Mind is just physical brain</label>
-          <label><input type="radio" name="a3" value="N" class="mr-2">Unsure</label>
-        </div>
-      </div>
-      <!-- Q4 -->
-      <div>
-        <p class="mb-2">4. Can science explain all subjective experience?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="a4" value="P" required class="mr-2">Yes, fully explainable</label>
-          <label><input type="radio" name="a4" value="D" class="mr-2">No, goes beyond science</label>
-          <label><input type="radio" name="a4" value="N" class="mr-2">Unsure</label>
-        </div>
-      </div>
-      <!-- Q5 -->
-      <div>
-        <p class="mb-2">5. Could a computer ever have a real mind?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="a5" value="P" required class="mr-2">Yes, if replicates functions</label>
-          <label><input type="radio" name="a5" value="D" class="mr-2">No, only biological</label>
-          <label><input type="radio" name="a5" value="N" class="mr-2">Unsure</label>
-        </div>
-      </div>
-      <button id="toNext" type="button" class="w-full py-3 bg-indigo-600 text-white rounded-xl">Next</button>
-    </form>
-
-    <!-- Version B -->
-    <form id="formB" class="hidden space-y-6 bg-white p-6 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-semibold">Detailed Dualist Questions (Version B)</h2>
-      <!-- B1 -->
-      <div>
-        <p class="mb-2">1. Mind–body relationship?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="b1" value="Interactionist Dualism" required class="mr-2">Interactionist Dualism</label>
-          <label><input type="radio" name="b1" value="Epiphenomenalism" class="mr-2">Epiphenomenalism</label>
-          <label><input type="radio" name="b1" value="Property Dualism" class="mr-2">Property Dualism</label>
-          <label><input type="radio" name="b1" value="Substance Dualism" class="mr-2">Substance Dualism</label>
-        </div>
-      </div>
-      <!-- B2 -->
-      <div>
-        <p class="mb-2">2. Thoughts = brain states?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="b2" value="Identity Theory" required class="mr-2">Identity Theory</label>
-          <label><input type="radio" name="b2" value="Property Dualism" class="mr-2">Property Dualism</label>
-          <label><input type="radio" name="b2" value="Substance Dualism" class="mr-2">Substance Dualism</label>
-        </div>
-      </div>
-      <!-- B3 -->
-      <div>
-        <p class="mb-2">3. Do mental states cause behavior?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="b3" value="Interactionist Dualism" required class="mr-2">Interactionist Dualism</label>
-          <label><input type="radio" name="b3" value="Property Dualism" class="mr-2">Property Dualism</label>
-          <label><input type="radio" name="b3" value="Epiphenomenalism" class="mr-2">Epiphenomenalism</label>
-          <label><input type="radio" name="b3" value="Parallelism" class="mr-2">Parallelism</label>
-        </div>
-      </div>
-      <!-- B4 -->
-      <div>
-        <p class="mb-2">4. Conscious decision &lt;-&gt; movement?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="b4" value="Interactionist Dualism" required class="mr-2">Interactionist Dualism</label>
-          <label><input type="radio" name="b4" value="Epiphenomenalism" class="mr-2">Epiphenomenalism</label>
-          <label><input type="radio" name="b4" value="Identity Theory" class="mr-2">Identity Theory</label>
-          <label><input type="radio" name="b4" value="Dual-Aspect Theory" class="mr-2">Dual‑Aspect Theory</label>
-          <label><input type="radio" name="b4" value="Parallelism" class="mr-2">Parallelism</label>
-        </div>
-      </div>
-      <!-- B5 -->
-      <div>
-        <p class="mb-2">5. Brain activity without feeling?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="b5" value="Substance Dualism" required class="mr-2">Substance Dualism</label>
-          <label><input type="radio" name="b5" value="Epiphenomenalism" class="mr-2">Epiphenomenalism</label>
-          <label><input type="radio" name="b5" value="Property Dualism" class="mr-2">Property Dualism</label>
-          <label><input type="radio" name="b5" value="Parallelism" class="mr-2">Parallelism</label>
-          <label><input type="radio" name="b5" value="Interactionist Dualism" class="mr-2">Interactionist Dualism</label>
-        </div>
-      </div>
-      <!-- B6 -->
-      <div>
-        <p class="mb-2">6. Saying lying is wrong but lying?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="b6" value="Substance Dualism" required class="mr-2">Substance Dualism</label>
-          <label><input type="radio" name="b6" value="Epiphenomenalism" class="mr-2">Epiphenomenalism</label>
-          <label><input type="radio" name="b6" value="Functionalism" class="mr-2">Functionalism</label>
-          <label><input type="radio" name="b6" value="Parallelism" class="mr-2">Parallelism</label>
-          <label><input type="radio" name="b6" value="Property Dualism" class="mr-2">Property Dualism</label>
-        </div>
-      </div>
-      <button id="toResultB" type="button" class="w-full py-3 bg-indigo-600 text-white rounded-xl">See Your Theory</button>
-    </form>
-
-    <!-- Version C -->
-    <form id="formC" class="hidden space-y-6 bg-white p-6 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-semibold">Detailed Physicalist Questions (Version C)</h2>
-      <!-- C1 -->
-      <div>
-        <p class="mb-2">1. Consciousness defined by makeup or process?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="c1" value="Reductive Physicalism" required class="mr-2">Defined by neural makeup</label>
-          <label><input type="radio" name="c1" value="Functionalism" class="mr-2">Defined by information processing</label>
-        </div>
-      </div>
-      <!-- C2 -->
-      <div>
-        <p class="mb-2">2. Can a computer have real mind if it behaves/processes like human?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="c2" value="Functionalism" required class="mr-2">Yes, if mental processing matches</label>
-          <label><input type="radio" name="c2" value="Behaviorism" class="mr-2">Yes, if behavior matches</label>
-          <label><input type="radio" name="c2" value="Reductive Physicalism" class="mr-2">No, lacks biological brain states</label>
-        </div>
-      </div>
-      <!-- C3 -->
-      <div>
-        <p class="mb-2">3. Belief without behavior?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="c3" value="Functionalism" required class="mr-2">Might, if internal role</label>
-          <label><input type="radio" name="c3" value="Behaviorism" class="mr-2">No, behavior required</label>
-          <label><input type="radio" name="c3" value="Reductive Physicalism" class="mr-2">Depends on brain state</label>
-        </div>
-      </div>
-      <!-- C4 -->
-      <div>
-        <p class="mb-2">4. Will terms like belief/desire/pain remain useful?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="c4" value="Eliminative Materialism" required class="mr-2">No, replaced by brain descriptions</label>
-          <label><input type="radio" name="c4" value="Behaviorism" class="mr-2">Yes, describe behaviors</label>
-          <label><input type="radio" name="c4" value="Functionalism" class="mr-2">Yes, describe functions</label>
-          <label><input type="radio" name="c4" value="Identity Theory" class="mr-2">Yes, refer to brain states</label>
-        </div>
-      </div>
-      <!-- C5 -->
-      <div>
-        <p class="mb-2">5. Importance of internal experience?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="c5" value="Behaviorism" required class="mr-2">Not important—focus on behavior</label>
-          <label><input type="radio" name="c5" value="Functionalism" class="mr-2">Internal helps explain actions</label>
-          <label><input type="radio" name="c5" value="Reductive Physicalism" class="mr-2">Feelings = brain states shorthand</label>
-          <label><input type="radio" name="c5" value="Eliminative Materialism" class="mr-2">Vague concept to discard</label>
-        </div>
-      </div>
-      <!-- C6 -->
-      <div>
-        <p class="mb-2">6. How describe mind in science?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="c6" value="Behaviorism" required class="mr-2">Collection of behaviors</label>
-          <label><input type="radio" name="c6" value="Functionalism" class="mr-2">Set of functional states</label>
-          <label><input type="radio" name="c6" value="Reductive Physicalism" class="mr-2">Set of brain states</label>
-          <label><input type="radio" name="c6" value="Eliminative Materialism" class="mr-2">Misleading concept to discard</label>
-        </div>
-      </div>
-      <button id="toResultC" type="button" class="w-full py-3 bg-indigo-600 text-white rounded-xl">See Your Theory</button>
-    </form>
-
-    <div id="finalResult" class="hidden mt-6 p-6 bg-white rounded-2xl shadow-lg"></div>
-  </div>
-
-  <script>
-    // Navigation buttons
-    document.getElementById('toA').addEventListener('click', () => {
-      document.getElementById('formSpiritual').classList.add('hidden');
-      document.getElementById('formA').classList.remove('hidden');
-    });
-
-    // Version A logic
-    const a1boxes = document.querySelectorAll('input[name="a1"]');
-    a1boxes.forEach(cb => cb.addEventListener('change', () => {
-      const checked = document.querySelectorAll('input[name="a1"]:checked');
-      document.getElementById('a1Error').classList.toggle('hidden', checked.length <= 3 && checked.length >= 1);
-    }));
-    document.getElementById('toNext').addEventListener('click', () => {
-      const checkedA1 = document.querySelectorAll('input[name="a1"]:checked');
-      if (checkedA1.length < 1 || checkedA1.length > 3) return;
-      // tally D vs P
-      let d=0, p=0;
-      checkedA1.forEach(cb=> cb.value==='D'?d++:cb.value==='P'?p++:null);
-      ['a2','a3','a4','a5'].forEach(q=> {
-        const val = document.querySelector(`input[name="${q}"]:checked`).value;
-        if(val==='D') d++; if(val==='P') p++;
-      });
-      document.getElementById('formA').classList.add('hidden');
-      if(d>p) document.getElementById('formB').classList.remove('hidden');
-      else document.getElementById('formC').classList.remove('hidden');
-    });
-
-    // Version B result
-    document.getElementById('toResultB').addEventListener('click', () => {
-      const counts={};
-      ['b1','b2','b3','b4','b5','b6'].forEach(q=> {
-        const val=document.querySelector(`input[name="${q}"]:checked`).value;
-        counts[val] = (counts[val]||0)+1;
-      });
-      showFinal(counts);
-    });
-    // Version C result
-    document.getElementById('toResultC').addEventListener('click', () => {
-      const counts={};
-      ['c1','c2','c3','c4','c5','c6'].forEach(q=> {
-        const val=document.querySelector(`input[name="${q}"]:checked`).value;
-        counts[val] = (counts[val]||0)+1;
-      });
-      showFinal(counts);
-    });
-
-    function showFinal(counts){
-      let topCount=0, theory='';
-      for(const [k,v] of Object.entries(counts)){
-        if(v>topCount){ topCount=v; theory=k; }
-      }
-      document.getElementById('finalResult').innerHTML = `
-        <h2 class="text-2xl font-bold mb-2">Your Theory: ${theory}</h2>
-        <p class="">Based on your answers, you align most with <strong>${theory}</strong>.</p>
-      `;
-      document.getElementById('finalResult').classList.remove('hidden');
-      window.scrollTo({ top: document.getElementById('finalResult').offsetTop, behavior: 'smooth'});
-    }
-  </script>
-</body>
-</html>
+        <div class="space-y-4">
+          <label class="block"><input type="radio" name="a3" value="D" required class="mr-2">Separate &amp; interact</label>
+          <label class="block"><input type="radio" name="a3" value="D" class="mr-2">Separate &amp; no interaction</label>
+          <label class="block"><input type="radio" name="a3" value="D" class="mr-2">Not separate but dual properties</label>
+          <label class="block"><input type="radio" name="a3" value="P" class="mr-2">Mind is just physical brain</label>
+          <label class="block"><input type="radio" name="a3" value="N" class="
