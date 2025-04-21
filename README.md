@@ -2,7 +2,7 @@
 
 A small interactive web app that guides users through a self‑discovery quiz on mind–body theories (dualism, physicalism, etc.) and then reveals your top philosophical alignment plus two runner‑up theories.
 ---
-Created by Keira Ang and Rohit Penta for our COGS 2120 Final Project
+Created by Keira Ang and Rohit Penta for our COGS 2120 Final Project (Spring 2025)
 
 ## 🔍 Quick Description
 
