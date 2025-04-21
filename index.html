@@ -438,17 +438,35 @@
     });
 
     function showFinal(counts){
-      let topCount=0, theory='';
-      for(const [k,v] of Object.entries(counts)){
-        if(v>topCount){ topCount=v; theory=k; }
+      let topCount = 0, theory = '';
+      const theoryDescriptions = {
+        "Interactionist Dualism": "Mind and body are distinct entities that interact and influence each other.",
+        "Epiphenomenalism": "Mental states are by-products of physical processes in the brain and do not influence physical actions.",
+        "Property Dualism": "Mind and body are aspects of the same substance, having both physical and non-physical properties.",
+        "Substance Dualism": "Mind and body are entirely separate entities that do not interact.",
+        "Identity Theory": "Mental states are identical to physical brain states, just described differently.",
+        "Parallelism": "Mind and body run in parallel, corresponding to each other without direct interaction.",
+        "Reductive Physicalism": "Consciousness and mental states are fully explainable in terms of brain states and physical processes.",
+        "Functionalism": "Mental states are defined by their functional role rather than their physical makeup.",
+        "Behaviorism": "Mental states are fully explainable by observable physical behavior.",
+        "Eliminative Materialism": "Common mental state concepts (e.g., belief, desire) are misleading and will be replaced by precise neuroscience terms."
+      };
+    
+      // Determine the top theory
+      for (const [k, v] of Object.entries(counts)) {
+        if (v > topCount) { topCount = v; theory = k; }
       }
+      
+      // Generate the final result with description
+      const description = theoryDescriptions[theory] || "No description available for this theory.";
       document.getElementById('finalResult').innerHTML = `
         <h2 class="text-2xl font-bold mb-2">Your Theory: ${theory}</h2>
-        <p class="">Based on your answers, you align most with <strong>${theory}</strong>.</p>
+        <p class="mb-4">Based on your answers, you align most with <strong>${theory}</strong>.</p>
+        <p class="text-gray-700">${description}</p>
       `;
       document.getElementById('finalResult').classList.remove('hidden');
-      window.scrollTo({ top: document.getElementById('finalResult').offsetTop, behavior: 'smooth'});
-    }
+      window.scrollTo({ top: document.getElementById('finalResult').offsetTop, behavior: 'smooth' });
+  }
   </script>
 </body>
 </html>
