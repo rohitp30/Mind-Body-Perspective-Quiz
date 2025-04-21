@@ -451,7 +451,10 @@
       });
 
     function showFinal(counts) {
-        let topCount = 0, theory = '';
+        const sorted = Object.entries(counts).sort((a,b) => b[1] - a[1]);
+        const [first, second, third] = sorted;
+        const topTheory = first ? first[0] : '';
+
         const theoryDescriptions = {
           "Interactionist Dualism": {
             coreIdea: "Mind and body are distinct entities that interact and influence each other.",
@@ -565,18 +568,15 @@
           }
         };
 
-        // Determine the top theory
-        for (const [k, v] of Object.entries(counts)) {
-          if (v > topCount) { topCount = v; theory = k; }
-        }
-
-        // Render detailed result
-        const details = theoryDescriptions[theory];
+        // Show detailed for top theory
+        const details = theoryDescriptions[topTheory];
+        let html = `
+          <h2 class="text-2xl font-bold mb-2">Your Top Theory: ${topTheory}</h2>
+          <p class="mb-4">You align most with <strong>${topTheory}</strong>.</p>
+        `;
         if (details) {
           const { coreIdea, keyImplications, challenges } = details;
-          document.getElementById('finalResult').innerHTML = `
-            <h2 class="text-2xl font-bold mb-2">Your Theory: ${theory}</h2>
-            <p class="mb-4">Based on your answers, you align most with <strong>${theory}</strong>.</p>
+          html += `
             <h3 class="text-xl font-bold mt-4">Core Idea</h3>
             <p>${coreIdea}</p>
             <h3 class="text-xl font-bold mt-4">Key Implications</h3>
@@ -588,12 +588,15 @@
               ${challenges.map(c => `<li>${c}</li>`).join('')}
             </ul>
           `;
-        } else {
-          document.getElementById('finalResult').innerHTML = `
-            <h2 class="text-2xl font-bold mb-2">Your Theory: ${theory}</h2>
-            <p class="text-gray-700">No detailed description available for this theory.</p>
-          `;
         }
+
+        // Quick list for 2nd and 3rd
+        html += `<h3 class="text-xl font-semibold mt-6">Runner‑Ups</h3><ul class="list-disc pl-6">`;
+        if (second) html += `<li><strong>${second[0]}</strong>: ${theoryDescriptions[second[0]]?.coreIdea || ''}</li>`;
+        if (third)  html += `<li><strong>${third[0]}</strong>: ${theoryDescriptions[third[0]]?.coreIdea || ''}</li>`;
+        html += `</ul>`;
+
+        document.getElementById('finalResult').innerHTML = html;
         document.getElementById('finalResult').classList.remove('hidden');
         window.scrollTo({ top: document.getElementById('finalResult').offsetTop, behavior: 'smooth' });
     }
