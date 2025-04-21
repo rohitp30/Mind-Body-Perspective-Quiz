@@ -419,23 +419,36 @@
     });
 
     // Version B result
-    document.getElementById('toResultB').addEventListener('click', () => {
-      const counts={};
-      ['b1','b2','b3','b4','b5','b6'].forEach(q=> {
-        const val=document.querySelector(`input[name="${q}"]:checked`).value;
-        counts[val] = (counts[val]||0)+1;
+      document.getElementById('toResultB').addEventListener('click', () => {
+        const counts = {};
+        const questions = ['b1','b2','b3','b4','b5','b6'];
+        for (const q of questions) {
+          const selected = document.querySelector(`input[name="${q}"]:checked`);
+          if (!selected) {
+            alert('Please answer all questions before continuing.');
+            return;
+          }
+          const val = selected.value;
+          counts[val] = (counts[val]||0) + 1;
+        }
+        showFinal(counts);
       });
-      showFinal(counts);
-    });
-    // Version C result
-    document.getElementById('toResultC').addEventListener('click', () => {
-      const counts={};
-      ['c1','c2','c3','c4','c5','c6'].forEach(q=> {
-        const val=document.querySelector(`input[name="${q}"]:checked`).value;
-        counts[val] = (counts[val]||0)+1;
+
+      // Version C result
+      document.getElementById('toResultC').addEventListener('click', () => {
+        const counts = {};
+        const questions = ['c1','c2','c3','c4','c5','c6'];
+        for (const q of questions) {
+          const selected = document.querySelector(`input[name="${q}"]:checked`);
+          if (!selected) {
+            alert('Please answer all questions before continuing.');
+            return;
+          }
+          const val = selected.value;
+          counts[val] = (counts[val]||0) + 1;
+        }
+        showFinal(counts);
       });
-      showFinal(counts);
-    });
 
     function showFinal(counts) {
         let topCount = 0, theory = '';
