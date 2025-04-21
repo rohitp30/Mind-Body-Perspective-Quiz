@@ -4,391 +4,396 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mind–Body Self-Discovery Quiz</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <div class="max-w-3xl mx-auto p-6">
-    <h1 class="text-3xl font-bold mb-6 text-center">Mind–Body Self‑Discovery Quiz</h1>
+<div class="max-w-3xl mx-auto p-6">
+  <h1 class="text-3xl font-bold mb-6 text-center">Mind–Body Self‑Discovery Quiz</h1>
+  <p class="text-center text-gray-600 mb-8">
+    A quiz to explore your beliefs about the mind–body relationship.<br>
+    Made by Rohit and Keira | COGS 2120 (Spring 2025) Final Project
+  </p>
 
-    <!-- Spiritual Section -->
-    <form id="formSpiritual" class="space-y-6 bg-white p-6 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-semibold">Part I: Spirituality</h2>
-      <div>
-        <p class="mb-2 font-bold">1. Do you practice any religion/spirituality?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="sp1" value="very" required class="mr-2">Yes, I am very religious/spiritual<br></label>
-          <label><input type="radio" name="sp1" value="casual" class="mr-2">Yes, but only casually<br></label>
-          <label><input type="radio" name="sp1" value="raised_unsure" class="mr-2">Raised religious, but unsure<br></label>
-          <label><input type="radio" name="sp1" value="not_raised_unsure" class="mr-2">Not raised religious, but unsure<br></label>
-          <label><input type="radio" name="sp1" value="none" class="mr-2">I do not practice nor believe at all<br></label>
-        </div>
+  <!-- Spiritual Section -->
+  <form id="formSpiritual" class="space-y-6 bg-white p-6 rounded-2xl shadow-lg">
+    <h2 class="text-2xl font-semibold">Part I: Spirituality</h2>
+    <div>
+      <p class="mb-2 font-bold">1. Do you practice any religion/spirituality?</p>
+      <div class="space-y-2">
+        <label><input type="radio" name="sp1" value="very" required class="mr-2">Yes, I am very religious/spiritual<br></label>
+        <label><input type="radio" name="sp1" value="casual" class="mr-2">Yes, but only casually<br></label>
+        <label><input type="radio" name="sp1" value="raised_unsure" class="mr-2">Raised religious, but unsure<br></label>
+        <label><input type="radio" name="sp1" value="not_raised_unsure" class="mr-2">Not raised religious, but unsure<br></label>
+        <label><input type="radio" name="sp1" value="none" class="mr-2">I do not practice nor believe at all<br></label>
       </div>
-      <div>
-        <p class="mb-2 font-bold">2. Which belief was it? (Select all that apply.)</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <label><input type="checkbox" name="sp2" value="Monotheism" class="mr-2">Monotheism</label>
-          <label><input type="checkbox" name="sp2" value="Polytheism" class="mr-2">Polytheism</label>
-          <label><input type="checkbox" name="sp2" value="Animism" class="mr-2">Animism</label>
-          <label><input type="checkbox" name="sp2" value="HumanSpirits" class="mr-2">Belief all humans have spirits</label>
-          <label><input type="checkbox" name="sp2" value="Afterlife" class="mr-2">Belief in afterlife</label>
-          <label><input type="checkbox" name="sp2" value="Transcendence" class="mr-2">Belief in transcending</label>
-          <label><input type="checkbox" name="sp2" value="Reincarnation" class="mr-2">Reincarnation</label>
-          <label><input type="checkbox" name="sp2" value="Karma" class="mr-2">Karma-like power</label>
-          <label><input type="checkbox" name="sp2" value="Other" class="mr-2">Other</label>
-          <label><input type="checkbox" name="sp2" value="NA" class="mr-2">N/A</label>
-        </div>
+    </div>
+    <div>
+      <p class="mb-2 font-bold">2. Which belief was it? (Select all that apply.)</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        <label><input type="checkbox" name="sp2" value="Monotheism" class="mr-2">Monotheism</label>
+        <label><input type="checkbox" name="sp2" value="Polytheism" class="mr-2">Polytheism</label>
+        <label><input type="checkbox" name="sp2" value="Animism" class="mr-2">Animism</label>
+        <label><input type="checkbox" name="sp2" value="HumanSpirits" class="mr-2">Belief all humans have spirits</label>
+        <label><input type="checkbox" name="sp2" value="Afterlife" class="mr-2">Belief in afterlife</label>
+        <label><input type="checkbox" name="sp2" value="Transcendence" class="mr-2">Belief in transcending</label>
+        <label><input type="checkbox" name="sp2" value="Reincarnation" class="mr-2">Reincarnation</label>
+        <label><input type="checkbox" name="sp2" value="Karma" class="mr-2">Karma-like power</label>
+        <label><input type="checkbox" name="sp2" value="Other" class="mr-2">Other</label>
+        <label><input type="checkbox" name="sp2" value="NA" class="mr-2">N/A</label>
       </div>
-      <div>
-        <p class="mb-2 font-bold">3. Do you enjoy philosophical conversation/debates?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="sp3" value="love" required class="mr-2">Yes—my favorite pastime<br></label>
-          <label><input type="radio" name="sp3" value="small" class="mr-2">I enjoy them in small doses<br></label>
-          <label><input type="radio" name="sp3" value="action" class="mr-2">Prefer actionable insights<br></label>
-          <label><input type="radio" name="sp3" value="topic_dep" class="mr-2">Depends on topic (ethics/free will/consciousness)<br></label>
-          <label><input type="radio" name="sp3" value="not_really" class="mr-2">Not really—waste of time<br></label>
-        </div>
+    </div>
+    <div>
+      <p class="mb-2 font-bold">3. Do you enjoy philosophical conversation/debates?</p>
+      <div class="space-y-2">
+        <label><input type="radio" name="sp3" value="love" required class="mr-2">Yes—my favorite pastime<br></label>
+        <label><input type="radio" name="sp3" value="small" class="mr-2">I enjoy them in small doses<br></label>
+        <label><input type="radio" name="sp3" value="action" class="mr-2">Prefer actionable insights<br></label>
+        <label><input type="radio" name="sp3" value="topic_dep" class="mr-2">Depends on topic (ethics/free will/consciousness)<br></label>
+        <label><input type="radio" name="sp3" value="not_really" class="mr-2">Not really—waste of time<br></label>
       </div>
-      <button id="toA" type="button" class="w-full py-3 bg-indigo-600 text-white rounded-xl">Continue to Quiz</button>
-    </form>
+    </div>
+    <button id="toA" type="button" class="w-full py-3 bg-indigo-600 text-white rounded-xl">Continue to Quiz</button>
+  </form>
 
-    <!-- Version A -->
-    <form id="formA" class="hidden space-y-6 bg-white p-6 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-semibold">Part II: Basic Mind–Body Perspective (Version A)</h2>
-      <!-- Q1 -->
-      <div>
-        <p class="mb-2 font-bold">1. Which of these statements are you 100% sure is true? (Select up to 3)</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <label><input type="checkbox" name="a1" value="D" class="mr-2">Mind is nonphysical</label>
-          <label><input type="checkbox" name="a1" value="P" class="mr-2">Body is physical</label>
-          <label><input type="checkbox" name="a1" value="D" class="mr-2">Mind and body interact</label>
-          <label><input type="checkbox" name="a1" value="D" class="mr-2">Physical and nonphysical cannot interact</label>
-          <label><input type="checkbox" name="a1" value="N" class="mr-2">Unsure about all</label>
-        </div>
-        <p id="a1Error" class="text-red-600 text-sm mt-1 hidden">Select 1–3 options.</p>
+  <!-- Version A -->
+  <form id="formA" class="hidden space-y-6 bg-white p-6 rounded-2xl shadow-lg">
+    <h2 class="text-2xl font-semibold">Part II: Basic Mind–Body Perspective (Version A)</h2>
+    <!-- Q1 -->
+    <div>
+      <p class="mb-2 font-bold">1. Which of these statements are you 100% sure is true? (Select up to 3)</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        <label><input type="checkbox" name="a1" value="D" class="mr-2">Mind is nonphysical</label>
+        <label><input type="checkbox" name="a1" value="P" class="mr-2">Body is physical</label>
+        <label><input type="checkbox" name="a1" value="D" class="mr-2">Mind and body interact</label>
+        <label><input type="checkbox" name="a1" value="D" class="mr-2">Physical and nonphysical cannot interact</label>
+        <label><input type="checkbox" name="a1" value="N" class="mr-2">Unsure about all</label>
       </div>
-      <!-- Q2 -->
-      <div>
-        <p class="mb-2 font-bold">2. Which of these statements are you 100% sure is false? (Select all that apply)</p>
-        <div class="space-y-2">
-          <label><input type="checkbox" name="a2" value="P" class="mr-2">Mind is nonphysical<br></label>
-          <label><input type="checkbox" name="a2" value="P" class="mr-2">Body is physical<br></label>
-          <label><input type="checkbox" name="a2" value="D" class="mr-2">Mind and body interact<br></label>
-          <label><input type="checkbox" name="a2" value="D" class="mr-2">Physical and nonphysical cannot interact<br></label>
-          <label><input type="checkbox" name="a2" value="N" class="mr-2">Unsure about all<br></label>
-        </div>
+      <p id="a1Error" class="text-red-600 text-sm mt-1 hidden">Select 1–3 options.</p>
+    </div>
+    <!-- Q2 -->
+    <div>
+      <p class="mb-2 font-bold">2. Which of these statements are you 100% sure is false? (Select all that apply)</p>
+      <div class="space-y-2">
+        <label><input type="checkbox" name="a2" value="P" class="mr-2">Mind is nonphysical<br></label>
+        <label><input type="checkbox" name="a2" value="P" class="mr-2">Body is physical<br></label>
+        <label><input type="checkbox" name="a2" value="D" class="mr-2">Mind and body interact<br></label>
+        <label><input type="checkbox" name="a2" value="D" class="mr-2">Physical and nonphysical cannot interact<br></label>
+        <label><input type="checkbox" name="a2" value="N" class="mr-2">Unsure about all<br></label>
       </div>
-      <!-- Q3 -->
-      <div>
-        <p class="mb-2 font-bold">3. Are the mind and body separate?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="a3" value="D" required class="mr-2">Separate &amp; interact<br></label>
-          <label><input type="radio" name="a3" value="D" class="mr-2">Separate &amp; no interaction<br></label>
-          <label><input type="radio" name="a3" value="D" class="mr-2">Not separate but dual properties<br></label>
-          <label><input type="radio" name="a3" value="P" class="mr-2">Mind is just physical brain<br></label>
-          <label><input type="radio" name="a3" value="N" class="mr-2">Unsure<br></label>
-        </div>
+    </div>
+    <!-- Q3 -->
+    <div>
+      <p class="mb-2 font-bold">3. Are the mind and body separate?</p>
+      <div class="space-y-2">
+        <label><input type="radio" name="a3" value="D" required class="mr-2">Separate &amp; interact<br></label>
+        <label><input type="radio" name="a3" value="D" class="mr-2">Separate &amp; no interaction<br></label>
+        <label><input type="radio" name="a3" value="D" class="mr-2">Not separate but dual properties<br></label>
+        <label><input type="radio" name="a3" value="P" class="mr-2">Mind is just physical brain<br></label>
+        <label><input type="radio" name="a3" value="N" class="mr-2">Unsure<br></label>
       </div>
-      <!-- Q4 -->
-      <div>
-        <p class="mb-2 font-bold">4. Can science explain all subjective experience?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="a4" value="P" required class="mr-2">Yes, fully explainable<br></label>
-          <label><input type="radio" name="a4" value="D" class="mr-2">No, goes beyond science<br></label>
-          <label><input type="radio" name="a4" value="N" class="mr-2">Unsure<br></label>
-        </div>
+    </div>
+    <!-- Q4 -->
+    <div>
+      <p class="mb-2 font-bold">4. Can science explain all subjective experience?</p>
+      <div class="space-y-2">
+        <label><input type="radio" name="a4" value="P" required class="mr-2">Yes, fully explainable<br></label>
+        <label><input type="radio" name="a4" value="D" class="mr-2">No, goes beyond science<br></label>
+        <label><input type="radio" name="a4" value="N" class="mr-2">Unsure<br></label>
       </div>
-      <!-- Q5 -->
-      <div>
-        <p class="mb-2 font-bold">5. Could a computer ever have a real mind?</p>
-        <div class="space-y-2">
-          <label><input type="radio" name="a5" value="P" required class="mr-2">Yes, if replicates functions<br></label>
-          <label><input type="radio" name="a5" value="D" class="mr-2">No, only biological<br></label>
-          <label><input type="radio" name="a5" value="N" class="mr-2">Unsure<br></label>
-        </div>
+    </div>
+    <!-- Q5 -->
+    <div>
+      <p class="mb-2 font-bold">5. Could a computer ever have a real mind?</p>
+      <div class="space-y-2">
+        <label><input type="radio" name="a5" value="P" required class="mr-2">Yes, if replicates functions<br></label>
+        <label><input type="radio" name="a5" value="D" class="mr-2">No, only biological<br></label>
+        <label><input type="radio" name="a5" value="N" class="mr-2">Unsure<br></label>
       </div>
-      <button id="toNext" type="button" class="w-full py-3 bg-indigo-600 text-white rounded-xl">Next</button>
-    </form>
+    </div>
+    <button id="toNext" type="button" class="w-full py-3 bg-indigo-600 text-white rounded-xl">Next</button>
+  </form>
 
-    <!-- Version B -->
-    <form id="formB" class="hidden space-y-6 bg-white p-6 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-semibold">Detailed Dualist Questions (Version B)</h2>
+  <!-- Version B -->
+  <form id="formB" class="hidden space-y-6 bg-white p-6 rounded-2xl shadow-lg">
+    <h2 class="text-2xl font-semibold">Detailed Dualist Questions (Version B)</h2>
 
-      <!-- Q1 -->
-      <div>
-        <p class="mb-2 font-bold">1. Which of these best describes the mind’s relationship with the body?</p>
-        <div class="space-y-4">
-          <label class="block mb-4">
-            <input type="radio" name="b1" value="Interactionist Dualism" required class="mr-2">
-            The mind, despite being non‑physical, somehow finds a way to influence the physical body, and vice versa.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b1" value="Epiphenomenalism" class="mr-2">
-            The mind is like a shadow cast by the brain, just a by‑product of physical events without any effect on the body.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b1" value="Property Dualism" class="mr-2">
-            The mind can influence the body because it has both non‑physical and physical properties, and the physical aspect exerts influence.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b1" value="Substance Dualism" class="mr-2">
-            The mind and body do not affect each other; they are separate and non‑interacting.
-          </label>
-        </div>
+    <!-- Q1 -->
+    <div>
+      <p class="mb-2 font-bold">1. Which of these best describes the mind’s relationship with the body?</p>
+      <div class="space-y-4">
+        <label class="block mb-4">
+          <input type="radio" name="b1" value="Interactionist Dualism" required class="mr-2">
+          The mind, despite being non‑physical, somehow finds a way to influence the physical body, and vice versa.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b1" value="Epiphenomenalism" class="mr-2">
+          The mind is like a shadow cast by the brain, just a by‑product of physical events without any effect on the body.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b1" value="Property Dualism" class="mr-2">
+          The mind can influence the body because it has both non‑physical and physical properties, and the physical aspect exerts influence.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b1" value="Substance Dualism" class="mr-2">
+          The mind and body do not affect each other; they are separate and non‑interacting.
+        </label>
       </div>
+    </div>
 
-      <!-- Q2 -->
-      <div>
-        <p class="mb-2 font-bold">2. Are thoughts and emotions literally identical to specific brain states—just described differently?</p>
-        <div class="space-y-4">
-          <label class="block mb-4">
-            <input type="radio" name="b2" value="Identity Theory" required class="mr-2">
-            Yes, they are brain states.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b2" value="Property Dualism" class="mr-2">
-            No, they’re distinct but depend on the brain.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b2" value="Substance Dualism" class="mr-2">
-            No, they are entirely separate from the physical.
-          </label>
-        </div>
+    <!-- Q2 -->
+    <div>
+      <p class="mb-2 font-bold">2. Are thoughts and emotions literally identical to specific brain states—just described differently?</p>
+      <div class="space-y-4">
+        <label class="block mb-4">
+          <input type="radio" name="b2" value="Identity Theory" required class="mr-2">
+          Yes, they are brain states.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b2" value="Property Dualism" class="mr-2">
+          No, they’re distinct but depend on the brain.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b2" value="Substance Dualism" class="mr-2">
+          No, they are entirely separate from the physical.
+        </label>
       </div>
+    </div>
 
-      <!-- Q3 -->
-      <div>
-        <p class="mb-2 font-bold">3. Do mental states (like pain or desire) play any role in changing physical behavior?</p>
-        <div class="space-y-4">
-          <label class="block mb-4">
-            <input type="radio" name="b3" value="Interactionist Dualism" required class="mr-2">
-            Yes—mental states can directly cause physical actions.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b3" value="Property Dualism" class="mr-2">
-            Yes—but only because mental properties are part of a broader physical system.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b3" value="Epiphenomenalism" class="mr-2">
-            No—mental states are just effects of physical causes and can’t cause anything themselves.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b3" value="Parallelism" class="mr-2">
-            No—mental states and physical events correspond but don’t influence each other.
-          </label>
-        </div>
+    <!-- Q3 -->
+    <div>
+      <p class="mb-2 font-bold">3. Do mental states (like pain or desire) play any role in changing physical behavior?</p>
+      <div class="space-y-4">
+        <label class="block mb-4">
+          <input type="radio" name="b3" value="Interactionist Dualism" required class="mr-2">
+          Yes—mental states can directly cause physical actions.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b3" value="Property Dualism" class="mr-2">
+          Yes—but only because mental properties are part of a broader physical system.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b3" value="Epiphenomenalism" class="mr-2">
+          No—mental states are just effects of physical causes and can’t cause anything themselves.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b3" value="Parallelism" class="mr-2">
+          No—mental states and physical events correspond but don’t influence each other.
+        </label>
       </div>
+    </div>
 
-      <!-- Q4 -->
-      <div>
-        <p class="mb-2 font-bold">4. When you decide to lift your hand, is your conscious decision the cause of the movement—or just an accompanying feeling?</p>
-        <div class="space-y-4">
-          <label class="block mb-4">
-            <input type="radio" name="b4" value="Interactionist Dualism" required class="mr-2">
-            It’s the cause—your mind influences your body.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b4" value="Epiphenomenalism" class="mr-2">
-            It’s just a feeling—your brain already decided.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b4" value="Identity Theory" class="mr-2">
-            Both happen together as part of the same process.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b4" value="Parallelism" class="mr-2">
-            Both happen simultaneously without affecting each other.
-          </label>
-        </div>
+    <!-- Q4 -->
+    <div>
+      <p class="mb-2 font-bold">4. When you decide to lift your hand, is your conscious decision the cause of the movement—or just an accompanying feeling?</p>
+      <div class="space-y-4">
+        <label class="block mb-4">
+          <input type="radio" name="b4" value="Interactionist Dualism" required class="mr-2">
+          It’s the cause—your mind influences your body.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b4" value="Epiphenomenalism" class="mr-2">
+          It’s just a feeling—your brain already decided.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b4" value="Identity Theory" class="mr-2">
+          Both happen together as part of the same process.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b4" value="Parallelism" class="mr-2">
+          Both happen simultaneously without affecting each other.
+        </label>
       </div>
+    </div>
 
-      <!-- Q5 -->
-      <div>
-        <p class="mb-2 font-bold">5. Imagine a person whose brain shows pain activity but who reports feeling nothing. How do you interpret that?</p>
-        <div class="space-y-4">
-          <label class="block mb-4">
-            <input type="radio" name="b5" value="Substance Dualism" required class="mr-2">
-            Their brain activity isn’t enough—you need a non‑physical mind to actually feel pain.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b5" value="Epiphenomenalism" class="mr-2">
-            Their brain produced pain, but it didn’t “light up” in consciousness this time.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b5" value="Property Dualism" class="mr-2">
-            Physical and mental experiences exist as separate properties and sometimes misalign.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b5" value="Parallelism" class="mr-2">
-            The brain and mind run in parallel—pain was registered in both systems, but the mind didn’t “notice.”
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b5" value="Interactionist Dualism" class="mr-2">
-            Something disrupted the usual causal loop—normally, pain in the mind would signal back to the body.
-          </label>
-        </div>
+    <!-- Q5 -->
+    <div>
+      <p class="mb-2 font-bold">5. Imagine a person whose brain shows pain activity but who reports feeling nothing. How do you interpret that?</p>
+      <div class="space-y-4">
+        <label class="block mb-4">
+          <input type="radio" name="b5" value="Substance Dualism" required class="mr-2">
+          Their brain activity isn’t enough—you need a non‑physical mind to actually feel pain.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b5" value="Epiphenomenalism" class="mr-2">
+          Their brain produced pain, but it didn’t “light up” in consciousness this time.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b5" value="Property Dualism" class="mr-2">
+          Physical and mental experiences exist as separate properties and sometimes misalign.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b5" value="Parallelism" class="mr-2">
+          The brain and mind run in parallel—pain was registered in both systems, but the mind didn’t “notice.”
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b5" value="Interactionist Dualism" class="mr-2">
+          Something disrupted the usual causal loop—normally, pain in the mind would signal back to the body.
+        </label>
       </div>
+    </div>
 
-      <!-- Q6 -->
-      <div>
-        <p class="mb-2 font-bold">6. Picture someone saying “I believe lying is wrong” but consistently lies when it benefits them. What do you think?</p>
-        <div class="space-y-4">
-          <label class="block mb-4">
-            <input type="radio" name="b6" value="Substance Dualism" required class="mr-2">
-            Their mental state may exist in the soul, even if it doesn’t influence behavior.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b6" value="Epiphenomenalism" class="mr-2">
-            They have the physical state of belief but it has no causal effect.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b6" value="Interactionist Dualism" class="mr-2">
-            Their behavior and internal processes aren’t functionally consistent with the belief—so they don’t really hold it.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b6" value="Parallelism" class="mr-2">
-            Belief is present but not influencing the parallel behavior system.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="b6" value="Property Dualism" class="mr-2">
-            They have the belief as a non‑physical property, but it’s overridden by competing physical motives.
-          </label>
-        </div>
+    <!-- Q6 -->
+    <div>
+      <p class="mb-2 font-bold">6. Picture someone saying “I believe lying is wrong” but consistently lies when it benefits them. What do you think?</p>
+      <div class="space-y-4">
+        <label class="block mb-4">
+          <input type="radio" name="b6" value="Substance Dualism" required class="mr-2">
+          Their mental state may exist in the soul, even if it doesn’t influence behavior.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b6" value="Epiphenomenalism" class="mr-2">
+          They have the physical state of belief but it has no causal effect.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b6" value="Interactionist Dualism" class="mr-2">
+          Their behavior and internal processes aren’t functionally consistent with the belief—so they don’t really hold it.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b6" value="Parallelism" class="mr-2">
+          Belief is present but not influencing the parallel behavior system.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="b6" value="Property Dualism" class="mr-2">
+          They have the belief as a non‑physical property, but it’s overridden by competing physical motives.
+        </label>
       </div>
+    </div>
 
-      <button id="toResultB" type="button" class="w-full py-3 bg-indigo-600 text-white rounded-xl">See Your Theory</button>
-    </form>
+    <button id="toResultB" type="button" class="w-full py-3 bg-indigo-600 text-white rounded-xl">See Your Theory</button>
+  </form>
 
-    <!-- Version C -->
-    <form id="formC" class="hidden space-y-6 bg-white p-6 rounded-2xl shadow-lg">
-      <h2 class="text-2xl font-semibold">Detailed Physicalist Questions (Version C)</h2>
+  <!-- Version C -->
+  <form id="formC" class="hidden space-y-6 bg-white p-6 rounded-2xl shadow-lg">
+    <h2 class="text-2xl font-semibold">Detailed Physicalist Questions (Version C)</h2>
 
-      <!-- C1 -->
-      <div>
-        <p class="mb-2 font-bold">1. Do you think consciousness is defined by what something is made of, or by what it does (how it processes information)?</p>
-        <div class="space-y-4">
-          <label class="block mb-4">
-            <input type="radio" name="c1" value="Reductive Physicalism" required class="mr-2">
-            Consciousness depends on what a person is made of—like neurons. Since mental states are identical to brain states, it cannot be transferred without replicating the neural map.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c1" value="Functionalism" class="mr-2">
-            Consciousness depends on what someone does—how they process information.
-          </label>
-        </div>
+    <!-- C1 -->
+    <div>
+      <p class="mb-2 font-bold">1. Do you think consciousness is defined by what something is made of, or by what it does (how it processes information)?</p>
+      <div class="space-y-4">
+        <label class="block mb-4">
+          <input type="radio" name="c1" value="Reductive Physicalism" required class="mr-2">
+          Consciousness depends on what a person is made of—like neurons. Since mental states are identical to brain states, it cannot be transferred without replicating the neural map.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c1" value="Functionalism" class="mr-2">
+          Consciousness depends on what someone does—how they process information.
+        </label>
       </div>
+    </div>
 
-      <!-- C2 -->
-      <div>
-        <p class="mb-2 font-bold">2. Can a non‑biological system (like a computer or robot) have genuine thoughts and feelings if it behaves and processes information just like a human?</p>
-        <div class="space-y-4">
-          <label class="block mb-4">
-            <input type="radio" name="c2" value="Functionalism" required class="mr-2">
-            Yes, only if its mental processes are indistinguishable from a human’s.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c2" value="Behaviorism" class="mr-2">
-            Yes, only if its behavior is indistinguishable from a human’s.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c2" value="Reductive Physicalism" class="mr-2">
-            No, because it doesn’t have the same biological brain states (neurons, neurotransmitters, etc.).
-          </label>
-        </div>
+    <!-- C2 -->
+    <div>
+      <p class="mb-2 font-bold">2. Can a non‑biological system (like a computer or robot) have genuine thoughts and feelings if it behaves and processes information just like a human?</p>
+      <div class="space-y-4">
+        <label class="block mb-4">
+          <input type="radio" name="c2" value="Functionalism" required class="mr-2">
+          Yes, only if its mental processes are indistinguishable from a human’s.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c2" value="Behaviorism" class="mr-2">
+          Yes, only if its behavior is indistinguishable from a human’s.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c2" value="Reductive Physicalism" class="mr-2">
+          No, because it doesn’t have the same biological brain states (neurons, neurotransmitters, etc.).
+        </label>
       </div>
+    </div>
 
-      <!-- C3 -->
-      <div>
-        <p class="mb-2 font-bold">3. If someone says they believe it’s going to rain but never shows it in their behavior, do they really believe it?</p>
-        <div class="space-y-4">
-          <label class="block mb-4">
-            <input type="radio" name="c3" value="Functionalism" required class="mr-2">
-            They might, if the belief plays the right internal role—even if it doesn’t lead to action.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c3" value="Behaviorism" class="mr-2">
-            We cannot recognize it as a belief because it’s not proven by behavior. No behavior, no belief.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c3" value="Reductive Physicalism" class="mr-2">
-            It depends on whether the specific mental state of belief is present in the brain.
-          </label>
-        </div>
+    <!-- C3 -->
+    <div>
+      <p class="mb-2 font-bold">3. If someone says they believe it’s going to rain but never shows it in their behavior, do they really believe it?</p>
+      <div class="space-y-4">
+        <label class="block mb-4">
+          <input type="radio" name="c3" value="Functionalism" required class="mr-2">
+          They might, if the belief plays the right internal role—even if it doesn’t lead to action.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c3" value="Behaviorism" class="mr-2">
+          We cannot recognize it as a belief because it’s not proven by behavior. No behavior, no belief.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c3" value="Reductive Physicalism" class="mr-2">
+          It depends on whether the specific mental state of belief is present in the brain.
+        </label>
       </div>
+    </div>
 
-      <!-- C4 -->
-      <div>
-        <p class="mb-2 font-bold">4. Do you think terms like “belief,” “desire,” or “pain” will continue to be useful in future science?</p>
-        <div class="space-y-4">
-          <label class="block mb-4">
-            <input type="radio" name="c4" value="Eliminative Materialism" required class="mr-2">
-            No. As neuroscience progresses, we’ll replace these concepts with brain‑state descriptions.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c4" value="Behaviorism" class="mr-2">
-            Yes. These concepts describe important behavioral patterns.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c4" value="Functionalism" class="mr-2">
-            Yes. They describe functions useful across different systems, even machines.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c4" value="Identity Theory" class="mr-2">
-            Yes. They’ll still be useful but refer to specific brain states.
-          </label>
-        </div>
+    <!-- C4 -->
+    <div>
+      <p class="mb-2 font-bold">4. Do you think terms like “belief,” “desire,” or “pain” will continue to be useful in future science?</p>
+      <div class="space-y-4">
+        <label class="block mb-4">
+          <input type="radio" name="c4" value="Eliminative Materialism" required class="mr-2">
+          No. As neuroscience progresses, we’ll replace these concepts with brain‑state descriptions.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c4" value="Behaviorism" class="mr-2">
+          Yes. These concepts describe important behavioral patterns.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c4" value="Functionalism" class="mr-2">
+          Yes. They describe functions useful across different systems, even machines.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c4" value="Identity Theory" class="mr-2">
+          Yes. They’ll still be useful but refer to specific brain states.
+        </label>
       </div>
+    </div>
 
-      <!-- C5 -->
-      <div>
-        <p class="mb-2 font-bold">5. How important is internal mental experience (like “feeling happy”) in understanding behavior?</p>
-        <div class="space-y-4">
-          <label class="block mb-4">
-            <input type="radio" name="c5" value="Behaviorism" required class="mr-2">
-            Not important—we should focus only on observable behavior.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c5" value="Functionalism" class="mr-2">
-            Internal states matter only because they help explain actions.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c5" value="Reductive Physicalism" class="mr-2">
-            Feelings like “happiness” are just shorthand for brain states.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c5" value="Eliminative Materialism" class="mr-2">
-            “Happiness” is a vague folk concept that will be replaced by precise brain-based terms.
-          </label>
-        </div>
+    <!-- C5 -->
+    <div>
+      <p class="mb-2 font-bold">5. How important is internal mental experience (like “feeling happy”) in understanding behavior?</p>
+      <div class="space-y-4">
+        <label class="block mb-4">
+          <input type="radio" name="c5" value="Behaviorism" required class="mr-2">
+          Not important—we should focus only on observable behavior.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c5" value="Functionalism" class="mr-2">
+          Internal states matter only because they help explain actions.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c5" value="Reductive Physicalism" class="mr-2">
+          Feelings like “happiness” are just shorthand for brain states.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c5" value="Eliminative Materialism" class="mr-2">
+          “Happiness” is a vague folk concept that will be replaced by precise brain-based terms.
+        </label>
       </div>
+    </div>
 
-      <!-- C6 -->
-      <div>
-        <p class="mb-2 font-bold">6. How should we describe the mind in scientific terms?</p>
-        <div class="space-y-4">
-          <label class="block mb-4">
-            <input type="radio" name="c6" value="Behaviorism" required class="mr-2">
-            As a collection of behaviors and responses to stimuli.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c6" value="Functionalism" class="mr-2">
-            As a set of functional states defined by their role.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c6" value="Reductive Physicalism" class="mr-2">
-            As a set of brain states that science will fully map and define.
-          </label>
-          <label class="block mb-4">
-            <input type="radio" name="c6" value="Eliminative Materialism" class="mr-2">
-            As a misleading concept we’ll discard in favor of direct neural explanations.
-          </label>
-        </div>
+    <!-- C6 -->
+    <div>
+      <p class="mb-2 font-bold">6. How should we describe the mind in scientific terms?</p>
+      <div class="space-y-4">
+        <label class="block mb-4">
+          <input type="radio" name="c6" value="Behaviorism" required class="mr-2">
+          As a collection of behaviors and responses to stimuli.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c6" value="Functionalism" class="mr-2">
+          As a set of functional states defined by their role.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c6" value="Reductive Physicalism" class="mr-2">
+          As a set of brain states that science will fully map and define.
+        </label>
+        <label class="block mb-4">
+          <input type="radio" name="c6" value="Eliminative Materialism" class="mr-2">
+          As a misleading concept we’ll discard in favor of direct neural explanations.
+        </label>
       </div>
+    </div>
 
-      <button id="toResultC" type="button" class="w-full py-3 bg-indigo-600 text-white rounded-xl">See Your Theory</button>
-    </form>
+    <button id="toResultC" type="button" class="w-full py-3 bg-indigo-600 text-white rounded-xl">See Your Theory</button>
+  </form>
 
-    <!-- result placeholder -->
-    <div id="finalResult" class="hidden mt-6 p-6 bg-white rounded-2xl shadow-lg"></div>
+  <!-- result placeholder -->
+  <div id="finalResult" class="hidden mt-6 p-6 bg-white rounded-2xl shadow-lg"></div>
 
   <script>
     // Navigation buttons
@@ -419,164 +424,164 @@
     });
 
     // Version B result
-      document.getElementById('toResultB').addEventListener('click', () => {
-        const counts = {};
-        const questions = ['b1','b2','b3','b4','b5','b6'];
-        for (const q of questions) {
-          const selected = document.querySelector(`input[name="${q}"]:checked`);
-          if (!selected) {
-            alert('Please answer all questions before continuing.');
-            return;
-          }
-          const val = selected.value;
-          counts[val] = (counts[val]||0) + 1;
+    document.getElementById('toResultB').addEventListener('click', () => {
+      const counts = {};
+      const questions = ['b1','b2','b3','b4','b5','b6'];
+      for (const q of questions) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (!selected) {
+          alert('Please answer all questions before continuing.');
+          return;
         }
-        showFinal(counts);
-      });
+        const val = selected.value;
+        counts[val] = (counts[val]||0) + 1;
+      }
+      showFinal(counts);
+    });
 
-      // Version C result
-      document.getElementById('toResultC').addEventListener('click', () => {
-        const counts = {};
-        const questions = ['c1','c2','c3','c4','c5','c6'];
-        for (const q of questions) {
-          const selected = document.querySelector(`input[name="${q}"]:checked`);
-          if (!selected) {
-            alert('Please answer all questions before continuing.');
-            return;
-          }
-          const val = selected.value;
-          counts[val] = (counts[val]||0) + 1;
+    // Version C result
+    document.getElementById('toResultC').addEventListener('click', () => {
+      const counts = {};
+      const questions = ['c1','c2','c3','c4','c5','c6'];
+      for (const q of questions) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (!selected) {
+          alert('Please answer all questions before continuing.');
+          return;
         }
-        showFinal(counts);
-      });
+        const val = selected.value;
+        counts[val] = (counts[val]||0) + 1;
+      }
+      showFinal(counts);
+    });
 
     function showFinal(counts) {
-        const sorted = Object.entries(counts).sort((a,b) => b[1] - a[1]);
-        const [first, second, third] = sorted;
-        const topTheory = first ? first[0] : '';
+      const sorted = Object.entries(counts).sort((a,b) => b[1] - a[1]);
+      const [first, second, third] = sorted;
+      const topTheory = first ? first[0] : '';
 
-        const theoryDescriptions = {
-          "Interactionist Dualism": {
-            coreIdea: "Mind and body are distinct entities that interact and influence each other.",
-            keyImplications: [
-              "Acknowledges the reality of subjective experience.",
-              "Allows for two-way causation between mental and physical states."
-            ],
-            challenges: [
-              "Explaining how nonphysical entities interact with physical ones.",
-              "Avoiding contradictions with physical laws."
-            ]
-          },
-          "Epiphenomenalism": {
-            coreIdea: "Mental states are by-products of physical processes in the brain and do not influence physical actions.",
-            keyImplications: [
-              "Retains the physicalist view of causation.",
-              "Explains subjective experience as a secondary effect."
-            ],
-            challenges: [
-              "Explaining why mental states exist if they have no causal role.",
-              "Reconciling with the intuitive sense that thoughts influence actions."
-            ]
-          },
-          "Property Dualism": {
-            coreIdea: "Mind and body are aspects of the same substance, having both physical and non-physical properties.",
-            keyImplications: [
-              "Acknowledges the reality of subjective experience.",
-              "Mental properties depend on but are not identical to brain states."
-            ],
-            challenges: [
-              "Explaining how nonphysical properties 'attach' to physical processes.",
-              "Avoiding covertly reintroducing a second substance."
-            ]
-          },
-          "Substance Dualism": {
-            coreIdea: "Mind and body are entirely separate entities that do not interact.",
-            keyImplications: [
-              "Clear ontological distinction between mental and physical.",
-              "Preserves integrity of both substances."
-            ],
-            challenges: [
-              "Explaining how two non-interacting substances coexist in one being.",
-              "Addressing mind-body coordination."
-            ]
-          },
-          "Identity Theory": {
-            coreIdea: "Mental states are identical to physical brain states, just described differently.",
-            keyImplications: [
-              "Reduces mental talk to neuroscience terminology.",
-              "Supports direct mapping between psychology and biology."
-            ],
-            challenges: [
-              "Accounting for qualitative experience (qualia).",
-              "Dealing with multiple realizability across species."
-            ]
-          },
-          "Parallelism": {
-            coreIdea: "Mind and body run in parallel, corresponding to each other without direct interaction.",
-            keyImplications: [
-              "Ensures perfect correlation between mental and physical.",
-              "Avoids causal problems of dualism."
-            ],
-            challenges: [
-              "Justifying pre-established harmony or coordination.",
-              "Explaining apparent causal influence of mind."
-            ]
-          },
-          "Reductive Physicalism": {
-            coreIdea: "Consciousness and mental states are fully explainable in terms of brain states and physical processes.",
-            keyImplications: [
-              "All phenomena can be studied by physical science.",
-              "Integrates mind into materialist worldview."
-            ],
-            challenges: [
-              "Addressing the 'hard problem' of subjective experience.",
-              "Explaining why neural processes give rise to feelings."
-            ]
-          },
-          "Functionalism": {
-            coreIdea: "Mental states are defined by their functional role rather than their physical makeup.",
-            keyImplications: [
-              "Allows multiple realizability in different substrates.",
-              "Focuses on information processing and causal roles."
-            ],
-            challenges: [
-              "Distinguishing genuine mental states from mere functional mimicry.",
-              "Addressing the Chinese Room objection."
-            ]
-          },
-          "Behaviorism": {
-            coreIdea: "Mental states are fully explainable by observable physical behavior.",
-            keyImplications: [
-              "Emphasizes objective measurement and prediction.",
-              "Removes unobservable inner states from theory."
-            ],
-            challenges: [
-              "Ignoring subjective experience and qualia.",
-              "Failing to explain internal cognitive processes."
-            ]
-          },
-          "Eliminative Materialism": {
-            coreIdea: "Common mental state concepts (e.g., belief, desire) are misleading and will be replaced by precise neuroscience terms.",
-            keyImplications: [
-              "Advocates for a scientific revolution in psychology.",
-              "Seeks to eliminate folk-psychological vocabulary."
-            ],
-            challenges: [
-              "Risk of self-refutation, since the theory uses mentalistic language.",
-              "Determining which concepts to eliminate first."
-            ]
-          }
-        };
+      const theoryDescriptions = {
+        "Interactionist Dualism": {
+          coreIdea: "Mind and body are distinct entities that interact and influence each other.",
+          keyImplications: [
+            "Acknowledges the reality of subjective experience.",
+            "Allows for two-way causation between mental and physical states."
+          ],
+          challenges: [
+            "Explaining how nonphysical entities interact with physical ones.",
+            "Avoiding contradictions with physical laws."
+          ]
+        },
+        "Epiphenomenalism": {
+          coreIdea: "Mental states are by-products of physical processes in the brain and do not influence physical actions.",
+          keyImplications: [
+            "Retains the physicalist view of causation.",
+            "Explains subjective experience as a secondary effect."
+          ],
+          challenges: [
+            "Explaining why mental states exist if they have no causal role.",
+            "Reconciling with the intuitive sense that thoughts influence actions."
+          ]
+        },
+        "Property Dualism": {
+          coreIdea: "Mind and body are aspects of the same substance, having both physical and non-physical properties.",
+          keyImplications: [
+            "Acknowledges the reality of subjective experience.",
+            "Mental properties depend on but are not identical to brain states."
+          ],
+          challenges: [
+            "Explaining how nonphysical properties 'attach' to physical processes.",
+            "Avoiding covertly reintroducing a second substance."
+          ]
+        },
+        "Substance Dualism": {
+          coreIdea: "Mind and body are entirely separate entities that do not interact.",
+          keyImplications: [
+            "Clear ontological distinction between mental and physical.",
+            "Preserves integrity of both substances."
+          ],
+          challenges: [
+            "Explaining how two non-interacting substances coexist in one being.",
+            "Addressing mind-body coordination."
+          ]
+        },
+        "Identity Theory": {
+          coreIdea: "Mental states are identical to physical brain states, just described differently.",
+          keyImplications: [
+            "Reduces mental talk to neuroscience terminology.",
+            "Supports direct mapping between psychology and biology."
+          ],
+          challenges: [
+            "Accounting for qualitative experience (qualia).",
+            "Dealing with multiple realizability across species."
+          ]
+        },
+        "Parallelism": {
+          coreIdea: "Mind and body run in parallel, corresponding to each other without direct interaction.",
+          keyImplications: [
+            "Ensures perfect correlation between mental and physical.",
+            "Avoids causal problems of dualism."
+          ],
+          challenges: [
+            "Justifying pre-established harmony or coordination.",
+            "Explaining apparent causal influence of mind."
+          ]
+        },
+        "Reductive Physicalism": {
+          coreIdea: "Consciousness and mental states are fully explainable in terms of brain states and physical processes.",
+          keyImplications: [
+            "All phenomena can be studied by physical science.",
+            "Integrates mind into materialist worldview."
+          ],
+          challenges: [
+            "Addressing the 'hard problem' of subjective experience.",
+            "Explaining why neural processes give rise to feelings."
+          ]
+        },
+        "Functionalism": {
+          coreIdea: "Mental states are defined by their functional role rather than their physical makeup.",
+          keyImplications: [
+            "Allows multiple realizability in different substrates.",
+            "Focuses on information processing and causal roles."
+          ],
+          challenges: [
+            "Distinguishing genuine mental states from mere functional mimicry.",
+            "Addressing the Chinese Room objection."
+          ]
+        },
+        "Behaviorism": {
+          coreIdea: "Mental states are fully explainable by observable physical behavior.",
+          keyImplications: [
+            "Emphasizes objective measurement and prediction.",
+            "Removes unobservable inner states from theory."
+          ],
+          challenges: [
+            "Ignoring subjective experience and qualia.",
+            "Failing to explain internal cognitive processes."
+          ]
+        },
+        "Eliminative Materialism": {
+          coreIdea: "Common mental state concepts (e.g., belief, desire) are misleading and will be replaced by precise neuroscience terms.",
+          keyImplications: [
+            "Advocates for a scientific revolution in psychology.",
+            "Seeks to eliminate folk-psychological vocabulary."
+          ],
+          challenges: [
+            "Risk of self-refutation, since the theory uses mentalistic language.",
+            "Determining which concepts to eliminate first."
+          ]
+        }
+      };
 
-        // Show detailed for top theory
-        const details = theoryDescriptions[topTheory];
-        let html = `
+      // Show detailed for top theory
+      const details = theoryDescriptions[topTheory];
+      let html = `
           <h2 class="text-2xl font-bold mb-2">Your Top Theory: ${topTheory}</h2>
           <p class="mb-4">You align most with <strong>${topTheory}</strong>.</p>
         `;
-        if (details) {
-          const { coreIdea, keyImplications, challenges } = details;
-          html += `
+      if (details) {
+        const { coreIdea, keyImplications, challenges } = details;
+        html += `
             <h3 class="text-xl font-bold mt-4">Core Idea</h3>
             <p>${coreIdea}</p>
             <h3 class="text-xl font-bold mt-4">Key Implications</h3>
@@ -588,21 +593,21 @@
               ${challenges.map(c => `<li>${c}</li>`).join('')}
             </ul>
           `;
-        }
+      }
 
-        // Quick list for 2nd and 3rd
-        html += `
+      // Quick list for 2nd and 3rd
+      html += `
           <h3 class="text-xl font-semibold mt-6">Runner‑Ups</h3>
           <p class="text-sm text-gray-600 mt-1">Here are your 2nd and 3rd most matched (alternative) theories:</p>
           <ol start="2" class="list-decimal pl-6 mt-2">
         `;
-        if (second) html += `<li><strong>${second[0]}</strong>: ${theoryDescriptions[second[0]]?.coreIdea || ''}</li>`;
-        if (third)  html += `<li><strong>${third[0]}</strong>: ${theoryDescriptions[third[0]]?.coreIdea || ''}</li>`;
-        html += `</ol>`;
+      if (second) html += `<li><strong>${second[0]}</strong>: ${theoryDescriptions[second[0]]?.coreIdea || ''}</li>`;
+      if (third)  html += `<li><strong>${third[0]}</strong>: ${theoryDescriptions[third[0]]?.coreIdea || ''}</li>`;
+      html += `</ol>`;
 
-        document.getElementById('finalResult').innerHTML = html;
-        document.getElementById('finalResult').classList.remove('hidden');
-        window.scrollTo({ top: document.getElementById('finalResult').offsetTop, behavior: 'smooth' });
+      document.getElementById('finalResult').innerHTML = html;
+      document.getElementById('finalResult').classList.remove('hidden');
+      window.scrollTo({ top: document.getElementById('finalResult').offsetTop, behavior: 'smooth' });
     }
   </script>
 </body>
