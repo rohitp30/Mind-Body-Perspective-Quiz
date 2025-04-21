@@ -591,10 +591,10 @@
         }
 
         // Quick list for 2nd and 3rd
-        html += `<h3 class="text-xl font-semibold mt-6">Runner‑Ups</h3><ul class="list-disc pl-6">`;
+        html += `<h3 class="text-xl font-semibold mt-6">Runner‑Ups</h3><ol start="2" class="list-decimal pl-6">`;
         if (second) html += `<li><strong>${second[0]}</strong>: ${theoryDescriptions[second[0]]?.coreIdea || ''}</li>`;
         if (third)  html += `<li><strong>${third[0]}</strong>: ${theoryDescriptions[third[0]]?.coreIdea || ''}</li>`;
-        html += `</ul>`;
+        html += `</ol>`;
 
         document.getElementById('finalResult').innerHTML = html;
         document.getElementById('finalResult').classList.remove('hidden');
