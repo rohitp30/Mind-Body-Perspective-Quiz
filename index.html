@@ -437,36 +437,153 @@
       showFinal(counts);
     });
 
-    function showFinal(counts){
-      let topCount = 0, theory = '';
-      const theoryDescriptions = {
-        "Interactionist Dualism": "Mind and body are distinct entities that interact and influence each other.",
-        "Epiphenomenalism": "Mental states are by-products of physical processes in the brain and do not influence physical actions.",
-        "Property Dualism": "Mind and body are aspects of the same substance, having both physical and non-physical properties.",
-        "Substance Dualism": "Mind and body are entirely separate entities that do not interact.",
-        "Identity Theory": "Mental states are identical to physical brain states, just described differently.",
-        "Parallelism": "Mind and body run in parallel, corresponding to each other without direct interaction.",
-        "Reductive Physicalism": "Consciousness and mental states are fully explainable in terms of brain states and physical processes.",
-        "Functionalism": "Mental states are defined by their functional role rather than their physical makeup.",
-        "Behaviorism": "Mental states are fully explainable by observable physical behavior.",
-        "Eliminative Materialism": "Common mental state concepts (e.g., belief, desire) are misleading and will be replaced by precise neuroscience terms."
-      };
-    
-      // Determine the top theory
-      for (const [k, v] of Object.entries(counts)) {
-        if (v > topCount) { topCount = v; theory = k; }
-      }
-      
-      // Generate the final result with description
-      const description = theoryDescriptions[theory] || "No description available for this theory.";
-      document.getElementById('finalResult').innerHTML = `
-        <h2 class="text-2xl font-bold mb-2">Your Theory: ${theory}</h2>
-        <p class="mb-4">Based on your answers, you align most with <strong>${theory}</strong>.</p>
-        <p class="text-gray-700">${description}</p>
-      `;
-      document.getElementById('finalResult').classList.remove('hidden');
-      window.scrollTo({ top: document.getElementById('finalResult').offsetTop, behavior: 'smooth' });
-  }
+    function showFinal(counts) {
+        let topCount = 0, theory = '';
+        const theoryDescriptions = {
+          "Interactionist Dualism": {
+            coreIdea: "Mind and body are distinct entities that interact and influence each other.",
+            keyImplications: [
+              "Acknowledges the reality of subjective experience.",
+              "Allows for two-way causation between mental and physical states."
+            ],
+            challenges: [
+              "Explaining how nonphysical entities interact with physical ones.",
+              "Avoiding contradictions with physical laws."
+            ]
+          },
+          "Epiphenomenalism": {
+            coreIdea: "Mental states are by-products of physical processes in the brain and do not influence physical actions.",
+            keyImplications: [
+              "Retains the physicalist view of causation.",
+              "Explains subjective experience as a secondary effect."
+            ],
+            challenges: [
+              "Explaining why mental states exist if they have no causal role.",
+              "Reconciling with the intuitive sense that thoughts influence actions."
+            ]
+          },
+          "Property Dualism": {
+            coreIdea: "Mind and body are aspects of the same substance, having both physical and non-physical properties.",
+            keyImplications: [
+              "Acknowledges the reality of subjective experience.",
+              "Mental properties depend on but are not identical to brain states."
+            ],
+            challenges: [
+              "Explaining how nonphysical properties 'attach' to physical processes.",
+              "Avoiding covertly reintroducing a second substance."
+            ]
+          },
+          "Substance Dualism": {
+            coreIdea: "Mind and body are entirely separate entities that do not interact.",
+            keyImplications: [
+              "Clear ontological distinction between mental and physical.",
+              "Preserves integrity of both substances."
+            ],
+            challenges: [
+              "Explaining how two non-interacting substances coexist in one being.",
+              "Addressing mind-body coordination."
+            ]
+          },
+          "Identity Theory": {
+            coreIdea: "Mental states are identical to physical brain states, just described differently.",
+            keyImplications: [
+              "Reduces mental talk to neuroscience terminology.",
+              "Supports direct mapping between psychology and biology."
+            ],
+            challenges: [
+              "Accounting for qualitative experience (qualia).",
+              "Dealing with multiple realizability across species."
+            ]
+          },
+          "Parallelism": {
+            coreIdea: "Mind and body run in parallel, corresponding to each other without direct interaction.",
+            keyImplications: [
+              "Ensures perfect correlation between mental and physical.",
+              "Avoids causal problems of dualism."
+            ],
+            challenges: [
+              "Justifying pre-established harmony or coordination.",
+              "Explaining apparent causal influence of mind."
+            ]
+          },
+          "Reductive Physicalism": {
+            coreIdea: "Consciousness and mental states are fully explainable in terms of brain states and physical processes.",
+            keyImplications: [
+              "All phenomena can be studied by physical science.",
+              "Integrates mind into materialist worldview."
+            ],
+            challenges: [
+              "Addressing the 'hard problem' of subjective experience.",
+              "Explaining why neural processes give rise to feelings."
+            ]
+          },
+          "Functionalism": {
+            coreIdea: "Mental states are defined by their functional role rather than their physical makeup.",
+            keyImplications: [
+              "Allows multiple realizability in different substrates.",
+              "Focuses on information processing and causal roles."
+            ],
+            challenges: [
+              "Distinguishing genuine mental states from mere functional mimicry.",
+              "Addressing the Chinese Room objection."
+            ]
+          },
+          "Behaviorism": {
+            coreIdea: "Mental states are fully explainable by observable physical behavior.",
+            keyImplications: [
+              "Emphasizes objective measurement and prediction.",
+              "Removes unobservable inner states from theory."
+            ],
+            challenges: [
+              "Ignoring subjective experience and qualia.",
+              "Failing to explain internal cognitive processes."
+            ]
+          },
+          "Eliminative Materialism": {
+            coreIdea: "Common mental state concepts (e.g., belief, desire) are misleading and will be replaced by precise neuroscience terms.",
+            keyImplications: [
+              "Advocates for a scientific revolution in psychology.",
+              "Seeks to eliminate folk-psychological vocabulary."
+            ],
+            challenges: [
+              "Risk of self-refutation, since the theory uses mentalistic language.",
+              "Determining which concepts to eliminate first."
+            ]
+          }
+        };
+
+        // Determine the top theory
+        for (const [k, v] of Object.entries(counts)) {
+          if (v > topCount) { topCount = v; theory = k; }
+        }
+
+        // Render detailed result
+        const details = theoryDescriptions[theory];
+        if (details) {
+          const { coreIdea, keyImplications, challenges } = details;
+          document.getElementById('finalResult').innerHTML = `
+            <h2 class="text-2xl font-bold mb-2">Your Theory: ${theory}</h2>
+            <p class="mb-4">Based on your answers, you align most with <strong>${theory}</strong>.</p>
+            <h3 class="text-xl font-bold mt-4">Core Idea</h3>
+            <p>${coreIdea}</p>
+            <h3 class="text-xl font-bold mt-4">Key Implications</h3>
+            <ul class="list-disc pl-6">
+              ${keyImplications.map(i => `<li>${i}</li>`).join('')}
+            </ul>
+            <h3 class="text-xl font-bold mt-4">Challenges</h3>
+            <ul class="list-disc pl-6">
+              ${challenges.map(c => `<li>${c}</li>`).join('')}
+            </ul>
+          `;
+        } else {
+          document.getElementById('finalResult').innerHTML = `
+            <h2 class="text-2xl font-bold mb-2">Your Theory: ${theory}</h2>
+            <p class="text-gray-700">No detailed description available for this theory.</p>
+          `;
+        }
+        document.getElementById('finalResult').classList.remove('hidden');
+        window.scrollTo({ top: document.getElementById('finalResult').offsetTop, behavior: 'smooth' });
+    }
   </script>
 </body>
 </html>
