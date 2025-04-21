@@ -591,7 +591,11 @@
         }
 
         // Quick list for 2nd and 3rd
-        html += `<h3 class="text-xl font-semibold mt-6">Runner‑Ups</h3><ol start="2" class="list-decimal pl-6">`;
+        html += `
+          <h3 class="text-xl font-semibold mt-6">Runner‑Ups</h3>
+          <p class="text-sm text-gray-600 mt-1">Here are your 2nd and 3rd most matched (alternative) theories:</p>
+          <ol start="2" class="list-decimal pl-6 mt-2">
+        `;
         if (second) html += `<li><strong>${second[0]}</strong>: ${theoryDescriptions[second[0]]?.coreIdea || ''}</li>`;
         if (third)  html += `<li><strong>${third[0]}</strong>: ${theoryDescriptions[third[0]]?.coreIdea || ''}</li>`;
         html += `</ol>`;
